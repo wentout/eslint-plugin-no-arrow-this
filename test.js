@@ -1,6 +1,6 @@
 'use strict';
 
-const Linter = require("eslint").Linter;
+const Linter = require('eslint').Linter;
 const linter = new Linter();
 
 linter.defineRules(require('./index.js').rules);

@@ -1,12 +1,15 @@
 'use strict';
 
 () => {
-	const me = 123;
+	// correct styling for this
 	(function () {
-		this;
+		const me = this;
+		console.log(me);
 	}());
 };
 
 () => {
-	me = this;
+	// wrong styling for this
+	var me = this;
+	console.log(me);
 };

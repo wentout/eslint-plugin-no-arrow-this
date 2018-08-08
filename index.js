@@ -17,13 +17,12 @@ const create = (context) => {
 				parent = parent.parent;
 				type = parent.type;
 				check();
-				if (result === null) {
+				if (result || result === null) {
 					break;
 				}
-				if (result) {
-					context.report(node, 'Do not use this in an arrow function');
-					break;
-				}
+			}
+			if (result) {
+				context.report(node, 'Do not use this in an arrow function');
 			}
 		}
 	};
