@@ -30,10 +30,12 @@ This plugin will help you to find this conditions.
 
 ## Example .eslintrc configuration
 
+### installation
 ```bash
 $ npm i eslint-plugin-no-arrow-this
 ```
 
+### typical config *for everything*
 ```javascript
 "plugins": [
   // ... other plugins
@@ -46,3 +48,13 @@ $ npm i eslint-plugin-no-arrow-this
 }
 ```
 So far here you will receive warning on `eslint`.
+
+### How to check ONLY global~window context mess
+```javascript
+  "no-arrow-this/no-arrow-this": ["warn", {
+    onlyGlobals : true
+  }]
+```
+
+## to play with this rule
+https://astexplorer.net/#/gist/1b0e7979d799635ae74f6bb15acf6c5a/a83c95146598f1ad828646ac71d556a8a5a8b839
