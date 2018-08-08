@@ -1,23 +1,26 @@
 module.exports = {
-    "env": {
-        "node": true,
-        "es6": true
+    'parser': 'babel-eslint',
+    'env': {
+        'node': true,
+        'es6': true
     },
-    "extends": "eslint:recommended",
-    "rules": {
-        "linebreak-style": [
-            "error",
-            "unix"
+    'extends': 'eslint:recommended',
+    'ecmaFeatures': {
+        'modules': true,
+    },
+    'rules': {
+        'linebreak-style': [
+            'error',
+            'unix'
         ],
-        "quotes": [
-            "error",
-            "single"
+        'quotes': [
+            'error',
+            'single'
         ],
-        "semi": [
-            "error",
-            "always"
+        'semi': [
+            'error',
+            'always'
         ],
-        "no-console": "off",
-        "no-arrow-this": "warn"
+        'no-console': 'off'
     }
 };

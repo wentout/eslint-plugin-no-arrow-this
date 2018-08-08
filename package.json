@@ -1,10 +1,14 @@
 {
   "name": "eslint-plugin-no-arrow-this",
-  "version": "1.0.3",
-  "description": "eslint plugin 4 warning \"this\" keyword inside of arrow functions",
-  "main": "index.js",
+  "version": "1.0.4",
+  "author": "went.out@gmail.com",
+  "description": "ESLint rule plugin 4 warning \"this\" keyword inside of arrow functions",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "rm -rf dist && babel src --out-dir dist",
+    "lint": "eslint src/ test/",
+    "test": "mocha",
+    "example": "node example/index.js"
   },
   "repository": {
     "type": "git",
@@ -12,11 +16,19 @@
   },
   "keywords": [
     "eslint",
-    "arrow",
-    "function",
+    "plugin",
+    "eslintplugin",
+    "eslint-plugin",
+    "arrow-function",
     "this"
   ],
-  "author": "went.out@gmail.com",
+  "directories": {
+    "lib": "dist/"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wentout/eslint-plugin-no-arrow-this/issues"
@@ -28,7 +40,15 @@
   "engines": {
     "node": ">=8.11.3"
   },
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.3.0"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "7.1.1",
+    "babel-register": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.3.0",
+    "mocha": "^5.2.0"
   }
 }

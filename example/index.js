@@ -3,15 +3,15 @@
 const Linter = require('eslint').Linter;
 const linter = new Linter();
 
-linter.defineRules(require('./index.js').rules);
+linter.defineRules(require('../dist/index.js').rules);
 
-const sample = require('fs').readFileSync('./sample.js').toString();
+const sample = require('fs').readFileSync('example/sample.js').toString();
 
-const config = require('./.eslintrc.js');
-console.log();
+const config = require('../.eslintrc.js');
 
-console.log('1st test!');
+console.log('\n1st test!');
 console.log('All suspicious condidions:\n\n');
+config.rules['no-arrow-this'] = 'warn';
 
 const results1 = linter.verify(
 	sample,
