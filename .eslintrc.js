@@ -5,9 +5,6 @@ module.exports = {
         'es6': true
     },
     'extends': 'eslint:recommended',
-    'ecmaFeatures': {
-        'modules': true,
-    },
     'rules': {
         'linebreak-style': [
             'error',
