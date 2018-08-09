@@ -1,14 +1,15 @@
 {
   "name": "eslint-plugin-no-arrow-this",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "went.out@gmail.com",
   "description": "ESLint rule plugin 4 warning \"this\" keyword inside of arrow functions",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf ./dist && babel ./src --out-dir ./dist",
+    "build": "rm -rf dist && babel src --out-dir dist",
     "lint": "eslint src/ test/",
     "test": "mocha && echo 'NOW let me show an Example!' && npm run example",
-    "example": "node example/index.js"
+    "example": "node example/index.js",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,15 @@
     "this"
   ],
   "directories": {
-    "lib": "dist/"
+    "lib": "dist/",
+    "src": "src/",
+    "example": "example/"
   },
   "files": [
     "README.md",
-    "dist"
+    "dist",
+    "src",
+    "example"
   ],
   "license": "MIT",
   "bugs": {
