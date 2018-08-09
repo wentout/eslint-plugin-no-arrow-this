@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-arrow-this",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "author": "went.out@gmail.com",
   "description": "ESLint rule plugin 4 warning \"this\" keyword inside of arrow functions",
   "main": "dist/index.js",
@@ -30,7 +30,6 @@
   },
   "files": [
     "README.md",
-    "dist",
     "src",
     "example"
   ],
