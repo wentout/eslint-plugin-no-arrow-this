@@ -57,4 +57,4 @@ So far here you will receive warning on `eslint`.
 ```
 
 ## to play with this rule
-https://astexplorer.net/#/gist/1b0e7979d799635ae74f6bb15acf6c5a/a83c95146598f1ad828646ac71d556a8a5a8b839
+on [astexplorer.net](https://astexplorer.net/#/gist/1b0e7979d799635ae74f6bb15acf6c5a/a83c95146598f1ad828646ac71d556a8a5a8b839)
