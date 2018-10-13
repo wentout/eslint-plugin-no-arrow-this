@@ -2,7 +2,7 @@
 
 ## Proposal
 
-This is a [eslint](https://eslint.org/) plugin for warning "this" keyword inside of arrow functions.
+This is a [eslint](https://eslint.org/) plugin for warning "this" keyword inside of arrow functions. The key is about to get rid of using `this` in sort of `global` context.
 
 For example, you have a code with regular function:
 
